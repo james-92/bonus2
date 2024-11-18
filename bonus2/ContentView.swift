@@ -154,7 +154,6 @@ struct ContentView: View {
         
             var newQuestion: Question?
             guard selectedQuestions.count < questions.count else {
-                // 如果所有問題都已選擇過，重置選擇
                 Finish.toggle()
                 selectedQuestions.removeAll()
                 newQuestion = questions.randomElement()
